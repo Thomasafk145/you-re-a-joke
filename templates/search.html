@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search Jokes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <h2>Search for a Joke</h2>
+    <form method="POST">
+        <input type="text" name="term" placeholder="e.g. pizza" />
+        <button type="submit">Search</button>
+    </form>
+    {% if jokes %}
+    <ul>
+        {% for joke in jokes %}
+        <li>{{ joke }}</li>
+        {% endfor %}
+    </ul>
+    {% elif no_jokes %}
+    <p>No jokes found, please try another term.</p>
+    {% endif %}
+
+    <nav>
+        <p><a href="/">ORPHANAGE</a></p>
+        <p><a href="/joke">Joke Generator</a></p>
+        
+    </nav>
+</body>
+
+</html>

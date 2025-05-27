@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+</head>
+
+<body>
+    <h1>WELCOME TO DAD JOKE GENERATOR</h1>
+    <p><a href="/joke">JOKES</a></p>
+    <p><a href="/search">SEARCH JOKES</a></p>
+    <div id="cards">
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card_body">
+                    <h2>Why did the burglar hang his mugshot on the wall? To prove that he was framed!</h2>
+                </div>
+                <div class="card_img">
+                    <img src="./images/toilet2.jpg" alt="" />
+                </div>
+
+
+            </div>
+            <div class="card">
+                <div class="card_body">
+                    <h2>
+                        Why do bees have sticky hair? Because they use honey combs!
+                    </h2>
+                </div>
+                <div class="card_img">
+                    <img src="./images/pipes.png" alt="" />
+                </div>
+
+            </div>
+            <div class="card">
+
+                <div class="card_body">
+                    <h2>Did you hear about the runner who was criticized? He just took it in stride</h2>
+                </div>
+            </div>
+            <div class="card_img">
+                <img src="./images/toilet3.png" alt="" />
+            </div>
+        </div>
+</body>
+
+</html>

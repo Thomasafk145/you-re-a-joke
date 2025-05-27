@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>JOKE</title>
+</head>
+
+<body>
+    <h2>Random DAD JOKE</h2>
+    <form action="/joke" method="POST">
+        <label class="moods" for="mood">SELECT YOUR MOOD</label>
+        <select class="moods" name="mood" id="mood" required>
+            <option value="Happy">Happy</option>
+            <option value="Sad">Sad</option>
+            <option value="Stressed">Stressed</option>
+            <option value="Bored">Bored</option>
+        </select>
+        <button class="moods" type="submit">Get a Joke</button>
+    </form>
+    <h3>{{jokes}}</h3>
+    <h3>{{message}}</h3>
+    
+
+    <p><a href="/">ORPHANAGE</a></p>
+    <p><a href="/search">Search Jokes</a></p>
+</body>
+
+</html>
