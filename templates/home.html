@@ -20,7 +20,7 @@
                     <h2>Why did the burglar hang his mugshot on the wall? To prove that he was framed!</h2>
                 </div>
                 <div class="card_img">
-                    <img src="./images/toilet2.jpg" alt="" />
+                    <img src="{{ url_for('static', filename='images/jpeg.png') }}" width="100%" alt="" />
                 </div>
 
 
@@ -32,7 +32,7 @@
                     </h2>
                 </div>
                 <div class="card_img">
-                    <img src="./images/pipes.png" alt="" />
+                    <img src="{{ url_for('static', filename='images/txt.jpeg') }}" width="90%" />
                 </div>
 
             </div>
@@ -41,11 +41,11 @@
                 <div class="card_body">
                     <h2>Did you hear about the runner who was criticized? He just took it in stride</h2>
                 </div>
+
+                <div class="card_img">
+                    <img src="{{ url_for('static', filename='images/webp.jpeg') }}" width="70%" alt="" />
+                </div>
             </div>
-            <div class="card_img">
-                <img src="./images/toilet3.png" alt="" />
-            </div>
-        </div>
 </body>
 
 </html>

@@ -1,11 +1,15 @@
+*{
+    background-color: green;
+}
 h1{
     font-size: 5vh;
+    color: lime;
 }
 h2{
-    font-size: 4vh;
+    font-size: 2vh;
 }
 h3{
-    font-size: 4vh;
+    font-size: 2vh;
 }
 p {
     font-size: 2vh;
@@ -18,3 +22,18 @@ li{
     font-weight: bold;
     
 }
+.card-wrapper > .card {
+    width: 32%;
+    box-sizing: border-box;
+  }
+  .card-wrapper {
+    padding-top: 10rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    border-radius: 7px;
+    border: 0.05rem solid black;
+    overflow: hidden;
+  }
